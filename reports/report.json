@@ -1,0 +1,15 @@
+{
+  "training_time_s": 0.068,
+  "accuracy": 1.0,
+  "precision_macro": 1.0,
+  "recall_macro": 1.0,
+  "f1_macro": 1.0,
+  "avg_latency_ms_per_ticket": 0.1049,
+  "labels": [
+    "Account Management",
+    "Billing Inquiry",
+    "Bug Report",
+    "Feature Request",
+    "Technical Issue"
+  ]
+}
