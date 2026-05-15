@@ -1,15 +1,31 @@
 {
-  "training_time_s": 0.068,
-  "accuracy": 1.0,
-  "precision_macro": 1.0,
-  "recall_macro": 1.0,
-  "f1_macro": 1.0,
-  "avg_latency_ms_per_ticket": 0.1049,
-  "labels": [
-    "Account Management",
-    "Billing Inquiry",
-    "Bug Report",
-    "Feature Request",
-    "Technical Issue"
-  ]
+  "phase1": {
+    "dataset": "customer_support_tickets.csv",
+    "rows": 200,
+    "model": "TF-IDF + LogisticRegression",
+    "accuracy": 1.0,
+    "f1_macro": 1.0
+  },
+  "phase2": {
+    "dataset": "customer_support_dataset_500_fixed.csv",
+    "rows": 485,
+    "model": "TF-IDF + LogisticRegression",
+    "accuracy": 0.9794,
+    "f1_macro": 0.9797
+  },
+  "phase3_category": {
+    "dataset": "customer_support_combined.csv",
+    "rows": 685,
+    "model": "all-MiniLM-L6-v2 + LogisticRegression",
+    "accuracy": 0.9781,
+    "f1_macro": 0.9779
+  },
+  "phase3_priority": {
+    "accuracy": 0.3504,
+    "f1_macro": 0.3436
+  },
+  "phase3_sentiment": {
+    "accuracy": 0.5255,
+    "f1_macro": 0.5036
+  }
 }
