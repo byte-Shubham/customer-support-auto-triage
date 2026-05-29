@@ -67,4 +67,3 @@ venv.bak/
 # Project specific
 data/predictions.db
 models/training_corpus.csv
-models/*.joblib
